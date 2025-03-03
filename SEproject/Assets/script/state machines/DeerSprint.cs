@@ -12,7 +12,7 @@ public class DeerSprint : IDeerState
     private float jumpForce = 5f;
     private float maxSpeed = 6f;
     
-    public DeerWalk(DeerStateMachine deer){
+    public DeerSprint(DeerStateMachine deer){
         this.deer = deer;
         rb = deer.rb;
     }
@@ -39,9 +39,9 @@ public class DeerSprint : IDeerState
     public void handleSpace(){
     }
     public void handleShift(){
-        
+        //no need to sprint when already sprinting
     }
     public void advanceState(){
-
+        if(Input.GetKeyUp(KeyCode.LeftShift)) deer.setState(new DeerWalk(deer));
     }
 }

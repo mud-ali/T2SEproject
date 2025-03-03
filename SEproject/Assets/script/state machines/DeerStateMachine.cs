@@ -34,6 +34,8 @@ public class DeerStateMachine : MonoBehaviour
         if (Input.GetKey(KeyCode.A)) deerState.handleLeft();
         if (Input.GetKey(KeyCode.D)) deerState.handleRight();
         if (Input.GetKeyDown(KeyCode.Space)) deerState.handleSpace();
+        if (Input.GetKeyDown(KeyCode.LeftShift)) deerState.handleShift();
+        deerState.handleGravity();
         deerState.advanceState();
         Debug.Log(rb.velocity.magnitude);
     }

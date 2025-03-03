@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638763029974441997
-    m_Hash: 307428473
+      ticks: 638766049651924458
+    m_Hash: 3878890415
   m_LockFileStatus:
     m_FilePath: C:/Users/jinch/T2SEproject/SEproject/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638763029974471917
-    m_Hash: 2930828750
+      ticks: 638766049651924458
+    m_Hash: 2942001684
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
@@ -756,7 +756,6 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
-    - 1.8.8
     compatible:
     - 1.7.6
     - 1.8.0
@@ -767,7 +766,6 @@ m_ResolvedPackages:
     - 1.8.5
     - 1.8.6
     - 1.8.7
-    - 1.8.8
     recommended: 1.7.6
     deprecated: []
   dependencies:
@@ -3294,11 +3292,9 @@ m_ResolvedPackages:
     - 1.1.0
     - 1.1.1
     - 1.2.2
-    - 1.2.3
     compatible:
     - 1.2.2
-    - 1.2.3
-    recommended: 1.2.3
+    recommended: 1.2.2
     deprecated: []
   dependencies: []
   resolvedDependencies: []
@@ -3399,7 +3395,6 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
-    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3421,7 +3416,6 @@ m_ResolvedPackages:
     - 1.4.3
     - 1.4.4
     - 1.4.5
-    - 1.4.6
     - 2.0.1-exp.1
     - 2.0.1-exp.2
     - 2.0.1-pre.12
@@ -3593,20 +3587,13 @@ m_ResolvedPackages:
     email: 
     url: 
   category: 
-  type: asset
+  type: 
   description: A framework for making any serializable field a setting, complete
     with a pre-built settings interface.
   status: 0
   errors: []
   versions:
     all:
-    - 0.1.0-preview.4
-    - 0.1.0-preview.8
-    - 1.0.0
-    - 1.0.1
-    - 1.0.2
-    - 1.0.3
-    - 2.0.0
     - 2.0.1
     compatible:
     - 2.0.1
@@ -3625,7 +3612,7 @@ m_ResolvedPackages:
     configSource: 0
   hideInEditor: 1
   isAssetStorePackage: 0
-  datePublishedTicks: 637744099390000000
+  datePublishedTicks: 0
   documentationUrl: 
   hasRepository: 1
   repository:
