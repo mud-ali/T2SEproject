@@ -8,7 +8,6 @@ public class DeerWalk : IDeerState
     private Rigidbody rb;
 
     private float speed = 2f;
-    private float rotationSpeed = 100f;
     private float jumpForce = 5f;
     private float maxSpeed = 2f;
     
@@ -31,10 +30,8 @@ public class DeerWalk : IDeerState
         }
     }
     public void handleLeft(){
-        deer.transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
     }
     public void handleRight(){
-        deer.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
     public void handleSpace(){
         // deer.setState();

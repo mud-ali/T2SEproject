@@ -9,15 +9,16 @@ public class DeerStateMachine : MonoBehaviour
     public Rigidbody rb;
 
     public bool IsGrounded {get; set;} = true;
+
     private Animator animator;
+    private GameManagerScript gameManager;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
         deerState = new DeerWalk(this);
-        if (rb == null){
-            Debug.LogError("Rigidbody missing");
-        }
         animator = transform.Find("Deer_001").GetComponent<Animator>();
+        gameManager = new GameManagerScript();
     }
     public void setState(IDeerState d){
         deerState = d;
@@ -25,19 +26,17 @@ public class DeerStateMachine : MonoBehaviour
 
     void Update()
     {
-        if (deerState == null){
-            Debug.LogError("deerstate null");
-            return;
-        }
+        
         animator.SetFloat("speed", rb.velocity.magnitude);
         if (Input.GetKey(KeyCode.W)) deerState.handleForward();
         if (Input.GetKey(KeyCode.A)) deerState.handleLeft();
         if (Input.GetKey(KeyCode.D)) deerState.handleRight();
         if (Input.GetKeyDown(KeyCode.Space)) deerState.handleSpace();
         if (Input.GetKeyDown(KeyCode.LeftShift)) deerState.handleShift();
+        this.transform.rotation = gameManager.camRotation;
         deerState.handleGravity();
         deerState.advanceState();
-        Debug.Log(rb.velocity.magnitude);
+
     }
 
     void OnCollisionEnter(Collision c){
