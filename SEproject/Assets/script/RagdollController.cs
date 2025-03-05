@@ -3,34 +3,63 @@ using UnityEngine;
 public class RagdollController : MonoBehaviour
 {
     private Rigidbody[] ragdollBodies;
+    private Rigidbody mainRagdollBody; // Main body for launching
     private Animator animator;
+    private bool isRagdoll = false;
+    public float launchPower = 100f; // Strength of the upward launch
+    public float collisionDelay = 3f; // Time before re-enabling collisions
 
     void Start()
     {
-        // Get all the rigidbodies in child objects (ragdoll parts)
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         animator = GetComponent<Animator>();
 
-        // Make sure the ragdoll is OFF when the game starts
+        mainRagdollBody = GetComponentInChildren<Rigidbody>(); // Choose the main ragdoll part
+
         SetRagdoll(false);
     }
 
-    public void SetRagdoll(bool isRagdoll)
+    public void SetRagdoll(bool activate, bool launchUp = false)
+    {
+        isRagdoll = activate;
+        animator.enabled = !activate;
+
+        foreach (Rigidbody rb in ragdollBodies)
+        {
+            rb.isKinematic = !activate;
+            rb.detectCollisions = activate;
+            rb.velocity = Vector3.zero; // Reset velocity
+        }
+
+        if (activate && launchUp && mainRagdollBody != null)
+        {
+            DisableCollisionsTemporarily();
+            mainRagdollBody.AddForce(Vector3.up * launchPower, ForceMode.Impulse);
+        }
+    }
+
+    void DisableCollisionsTemporarily()
     {
         foreach (Rigidbody rb in ragdollBodies)
         {
-            rb.isKinematic = !isRagdoll; // Enable physics when ragdoll is active
-            rb.detectCollisions = isRagdoll; // Prevent collisions when not ragdoll
+            rb.detectCollisions = false;
         }
-
-        animator.enabled = !isRagdoll; // Disable Animator when using ragdoll
+        Invoke(nameof(EnableCollisions), collisionDelay);
     }
 
-    void Update()
+    void EnableCollisions()
     {
-        if (Input.GetKeyDown(KeyCode.P)) // Simulate getting hit
+        foreach (Rigidbody rb in ragdollBodies)
         {
-            SetRagdoll(true); // Activate ragdoll
+            rb.detectCollisions = true;
+        }
+    }
+
+    void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Car") && !isRagdoll)
+        {
+            SetRagdoll(true, true);
         }
     }
 }
