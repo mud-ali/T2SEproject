@@ -3,17 +3,29 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags:
   - Obstacle
+=======
+  tags: []
+>>>>>>> dashAndJump
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
+<<<<<<< HEAD
   - 
   - Water
   - UI
   - 
   - DeerModel
+=======
+  - groundLayer
+  - Water
+  - UI
+  - 
+  - 
+>>>>>>> dashAndJump
   - 
   - 
   - 

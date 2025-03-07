@@ -15,33 +15,40 @@ public class DeerWalk : IDeerState
     public DeerWalk(DeerStateMachine deer){
         this.deer = deer;
         rb = deer.rb;
+        rb.useGravity = true;
     }
 
     public void handleGravity(){
-        if (!Input.anyKey){
-            rb.velocity = new Vector3(0f, rb.velocity.y, 0f);
-        }
+        // if (!deer.IsGrounded){
+        //     rb.AddForce(deer.transform.up * -5, ForceMode.Acceleration);
+        // }
     }
+
     public void handleForward(){
-        rb.velocity = new Vector3(deer.transform.forward.x * speed, rb.velocity.y, deer.transform.forward.z * speed);
+        rb.AddForce(deer.transform.forward * speed, ForceMode.Impulse);
 
         if (rb.velocity.magnitude > maxSpeed)
         {
             rb.velocity = rb.velocity.normalized * maxSpeed;
         }
     }
+    
     public void handleLeft(){
         deer.transform.Rotate(Vector3.up, -rotationSpeed * Time.deltaTime);
     }
+    
     public void handleRight(){
         deer.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
+    
     public void handleSpace(){
-        // deer.setState();
+        deer.setState(new DeerJump(deer, speed));
     }
+
     public void handleShift(){
         deer.setState(new DeerSprint(deer));
     }
+    
     public void advanceState(){
 
     }
