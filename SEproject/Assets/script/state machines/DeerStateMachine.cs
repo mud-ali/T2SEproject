@@ -33,7 +33,7 @@ public class DeerStateMachine : MonoBehaviour
         if (Input.GetKey(KeyCode.D)) deerState.handleRight();
         if (Input.GetKeyDown(KeyCode.Space)) deerState.handleSpace();
         if (Input.GetKeyDown(KeyCode.LeftShift)) deerState.handleShift();
-        this.transform.rotation = gameManager.camRotation;
+        // this.transform.rotation = gameManager.camRotation;
         deerState.handleGravity();
         deerState.advanceState();
 
