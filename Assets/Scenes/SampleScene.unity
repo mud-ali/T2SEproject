@@ -122,14 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
-=======
 --- !u!1 &5586691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: f612768321ebc364fa742fa8bbfadb5e, type: 3}
   m_PrefabInstance: {fileID: 2069282915}
   m_PrefabAsset: {fileID: 0}
->>>>>>> dashAndJump
 --- !u!1 &67704027
 GameObject:
   m_ObjectHideFlags: 0
@@ -161,7 +158,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!54 &69670120
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -258,8 +254,6 @@ CapsuleCollider:
   m_Height: 0.22862509
   m_Direction: 1
   m_Center: {x: 0, y: 0.114312544, z: 0}
-=======
->>>>>>> dashAndJump
 --- !u!1 &137810564
 GameObject:
   m_ObjectHideFlags: 3
@@ -387,7 +381,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!144 &259461383
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -482,8 +475,6 @@ SphereCollider:
   serializedVersion: 3
   m_Radius: 0.10571957
   m_Center: {x: 0, y: 0.10571957, z: 0}
-=======
->>>>>>> dashAndJump
 --- !u!1 &265673725
 GameObject:
   m_ObjectHideFlags: 0
@@ -578,7 +569,6 @@ Transform:
   - {fileID: 1400757038}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!144 &506979389
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -675,8 +665,6 @@ CapsuleCollider:
   m_Height: 0.26657608
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.13328804}
-=======
->>>>>>> dashAndJump
 --- !u!1 &571587745
 GameObject:
   m_ObjectHideFlags: 3
@@ -804,7 +792,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
 --- !u!1 &601360623
 GameObject:
   m_ObjectHideFlags: 3
@@ -1028,8 +1015,6 @@ CapsuleCollider:
   m_Height: 0.23249012
   m_Direction: 1
   m_Center: {x: 0, y: 0.11624506, z: 0}
-=======
->>>>>>> dashAndJump
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1124,7 +1109,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
-<<<<<<< HEAD
 --- !u!54 &720662433
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1630,9 +1614,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.3610332, y: 0.21959923, z: 0.35548586}
   m_Center: {x: -0.028182149, y: 0.06778466, z: -0.105201185}
-=======
->>>>>>> dashAndJump
---- !u!1 &928780205
+-- !u!1 &928780205
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1663,11 +1645,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-<<<<<<< HEAD
-  - {fileID: 543450651672946568}
-=======
   - {fileID: 2069282916}
->>>>>>> dashAndJump
   - {fileID: 1285698066}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1684,12 +1662,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 0}
-<<<<<<< HEAD
   mainCam: {fileID: 1154850457}
   deadCam: {fileID: 1911068455}
   ragdollController: {fileID: 919132148002979123}
-=======
->>>>>>> dashAndJump
 --- !u!54 &928780209
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -1832,26 +1807,15 @@ Camera:
     y: 0
     width: 1
     height: 1
-<<<<<<< HEAD
   near clip plane: 0.01
-=======
-  near clip plane: 0.1
->>>>>>> dashAndJump
   far clip plane: 5000
   field of view: 40
   orthographic: 0
   orthographic size: 10
-<<<<<<< HEAD
-  m_Depth: -100
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 55
-=======
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
->>>>>>> dashAndJump
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -1871,20 +1835,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
-<<<<<<< HEAD
   m_LocalRotation: {x: 0.3147516, y: -0.21575655, z: 0.07370405, w: 0.92138386}
   m_LocalPosition: {x: 7.9919477, y: 8.047453, z: 2.5235064}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 871179262}
-=======
-  m_LocalRotation: {x: -0.13462079, y: 5.8929084e-10, z: 8.005956e-11, w: 0.99089724}
-  m_LocalPosition: {x: 6.66, y: 3.94, z: -0.03999996}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
->>>>>>> dashAndJump
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &963194229
@@ -1921,7 +1877,6 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
-<<<<<<< HEAD
 --- !u!1 &1026049753
 GameObject:
   m_ObjectHideFlags: 3
@@ -2049,8 +2004,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> dashAndJump
 --- !u!1 &1154850455
 GameObject:
   m_ObjectHideFlags: 0
@@ -2105,11 +2058,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
-<<<<<<< HEAD
     NearClipPlane: 0.01
-=======
-    NearClipPlane: 0.1
->>>>>>> dashAndJump
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
@@ -2208,7 +2157,6 @@ Transform:
   - {fileID: 1230716859}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1167285278
 GameObject:
   m_ObjectHideFlags: 3
@@ -2384,8 +2332,6 @@ CapsuleCollider:
   m_Height: 0.4500375
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.22501875}
-=======
->>>>>>> dashAndJump
 --- !u!1 &1230716857
 GameObject:
   m_ObjectHideFlags: 3
@@ -2433,11 +2379,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
-<<<<<<< HEAD
-    NearClipPlane: 0.01
-=======
     NearClipPlane: 0.1
->>>>>>> dashAndJump
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
@@ -2462,18 +2404,13 @@ Transform:
   m_GameObject: {fileID: 1230716857}
   serializedVersion: 2
   m_LocalRotation: {x: -0.13462077, y: 0, z: 0, w: 0.99089724}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-=======
   m_LocalPosition: {x: 0.0000038146973, y: 0, z: 0}
->>>>>>> dashAndJump
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 137810565}
   m_Father: {fileID: 1154850458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!144 &1246357854
 CharacterJoint:
   m_ObjectHideFlags: 0
@@ -2570,8 +2507,6 @@ CapsuleCollider:
   m_Height: 0.48258603
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.24129301}
-=======
->>>>>>> dashAndJump
 --- !u!1 &1247326034
 GameObject:
   m_ObjectHideFlags: 3
@@ -2619,11 +2554,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
-<<<<<<< HEAD
-    NearClipPlane: 0.01
-=======
     NearClipPlane: 0.1
->>>>>>> dashAndJump
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
@@ -2648,11 +2579,7 @@ Transform:
   m_GameObject: {fileID: 1247326034}
   serializedVersion: 2
   m_LocalRotation: {x: -0.11662228, y: 0, z: 0, w: 0.99317634}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-=======
   m_LocalPosition: {x: 0.0000038146973, y: 0, z: 0}
->>>>>>> dashAndJump
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -2766,7 +2693,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1285698065}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
 --- !u!1 &1307522069
 GameObject:
   m_ObjectHideFlags: 3
@@ -2894,14 +2820,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-=======
->>>>>>> dashAndJump
 --- !u!4 &1400757038 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1686021177305034388, guid: ebee340de387f334f9ac44e044abd8fb, type: 3}
   m_PrefabInstance: {fileID: 959314875}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &1418085751
 GameObject:
   m_ObjectHideFlags: 3
@@ -3156,8 +3079,6 @@ CapsuleCollider:
   m_Height: 0.2403393
   m_Direction: 2
   m_Center: {x: 0, y: 0, z: -0.12016965}
-=======
->>>>>>> dashAndJump
 --- !u!1 &1693628841
 GameObject:
   m_ObjectHideFlags: 3
@@ -3205,11 +3126,7 @@ MonoBehaviour:
   m_Lens:
     FieldOfView: 40
     OrthographicSize: 10
-<<<<<<< HEAD
-    NearClipPlane: 0.01
-=======
     NearClipPlane: 0.1
->>>>>>> dashAndJump
     FarClipPlane: 5000
     Dutch: 0
     ModeOverride: 0
@@ -3234,18 +3151,13 @@ Transform:
   m_GameObject: {fileID: 1693628841}
   serializedVersion: 2
   m_LocalRotation: {x: -0.09853761, y: 0, z: 0, w: 0.99513334}
-<<<<<<< HEAD
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-=======
   m_LocalPosition: {x: 0.0000038146973, y: 0, z: 0}
->>>>>>> dashAndJump
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1950672496}
   m_Father: {fileID: 1154850458}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!1 &1911068453
 GameObject:
   m_ObjectHideFlags: 0
@@ -3386,8 +3298,6 @@ MonoBehaviour:
   - {fileID: 1167285280}
   - {fileID: 1555665713}
   - {fileID: 1418085753}
-=======
->>>>>>> dashAndJump
 --- !u!1 &1950672495
 GameObject:
   m_ObjectHideFlags: 3
@@ -3515,8 +3425,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< HEAD
-=======
 --- !u!1001 &2069282915
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3582,7 +3490,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: f612768321ebc364fa742fa8bbfadb5e, type: 3}
   m_PrefabInstance: {fileID: 2069282915}
   m_PrefabAsset: {fileID: 0}
->>>>>>> dashAndJump
 --- !u!95 &2069282917
 Animator:
   serializedVersion: 5
@@ -3590,11 +3497,7 @@ Animator:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 919132148002979122}
-=======
-  m_GameObject: {fileID: 5586691}
->>>>>>> dashAndJump
   m_Enabled: 1
   m_Avatar: {fileID: 0}
   m_Controller: {fileID: 9100000, guid: 988ba63179d7fc84da15c7431756310d, type: 2}
@@ -3608,7 +3511,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
-<<<<<<< HEAD
 --- !u!54 &2118776202
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4991,8 +4893,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-=======
->>>>>>> dashAndJump
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
@@ -5003,8 +4903,5 @@ SceneRoots:
   - {fileID: 1154850458}
   - {fileID: 67704028}
   - {fileID: 265673728}
-<<<<<<< HEAD
   - {fileID: 1911068454}
   - {fileID: 821076398}
-=======
->>>>>>> dashAndJump
