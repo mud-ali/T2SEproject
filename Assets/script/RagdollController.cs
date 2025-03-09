@@ -3,18 +3,18 @@ using UnityEngine;
 public class RagdollController : MonoBehaviour
 {
     private Rigidbody[] ragdollBodies;
-    private Rigidbody mainRagdollBody; // Main body for launching
+    private Rigidbody mainRagdollBody;
     private Animator animator;
     private bool isRagdoll = false;
-    public float launchPower = 100f; // Strength of the upward launch
-    public float collisionDelay = 3f; // Time before re-enabling collisions
+    public float launchPower = 100f;
+    public float collisionDelay = 3f;
 
     void Start()
     {
         ragdollBodies = GetComponentsInChildren<Rigidbody>();
         animator = GetComponent<Animator>();
 
-        mainRagdollBody = GetComponentInChildren<Rigidbody>(); // Choose the main ragdoll part
+        mainRagdollBody = GetComponentInChildren<Rigidbody>();
 
         SetRagdoll(false);
     }
@@ -28,7 +28,7 @@ public class RagdollController : MonoBehaviour
         {
             rb.isKinematic = !activate;
             rb.detectCollisions = activate;
-            rb.velocity = Vector3.zero; // Reset velocity
+            rb.velocity = Vector3.zero;
         }
 
         if (activate && launchUp && mainRagdollBody != null)

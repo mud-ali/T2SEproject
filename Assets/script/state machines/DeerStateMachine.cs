@@ -12,6 +12,7 @@ public class DeerStateMachine : MonoBehaviour
 
     public bool IsGrounded { get; set; } = true;
     private Animator animator;
+    private GameManagerScript gameManager;
 
     [SerializeField] CinemachineFreeLook mainCam;
     [SerializeField] CinemachineFreeLook deadCam;
@@ -31,10 +32,10 @@ public class DeerStateMachine : MonoBehaviour
         }
         animator = transform.Find("Deer_001").GetComponent<Animator>();
         isAlive = true;
+        gameManager = new GameManagerScript();
     }
 
-    public void setState(IDeerState d)
-    {
+    public void setState(IDeerState d){
         deerState = d;
     }
 

@@ -37,11 +37,12 @@ public class DeerSprint : IDeerState
         deer.transform.Rotate(Vector3.up, rotationSpeed * Time.deltaTime);
     }
     public void handleSpace(){
+        deer.setState(new DeerJump(deer, speed));
     }
     public void handleShift(){
         //no need to sprint when already sprinting
     }
     public void advanceState(){
-        if(Input.GetKeyUp(KeyCode.LeftShift)) deer.setState(new DeerWalk(deer));
+        if(!Input.GetKey(KeyCode.LeftShift)) deer.setState(new DeerWalk(deer));
     }
 }
